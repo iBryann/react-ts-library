@@ -1,19 +1,21 @@
 {
   "version": "0.1.0",
   "license": "MIT",
+  "name": "ui",
+  "author": "Bryann Henrique",
   "main": "dist/index.js",
+  "module": "dist/ui.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=18"
   },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -32,9 +34,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ui",
-  "author": "Bryann Henrique",
-  "module": "dist/ui.esm.js",
   "size-limit": [
     {
       "path": "dist/ui.cjs.production.min.js",
@@ -49,7 +48,11 @@
     "jackspeak": "2.1.1"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "dependencies": {
+    "styled-components": "^6.0.8"
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",
@@ -75,8 +78,5 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "styled-components": "^6.0.8"
   }
 }

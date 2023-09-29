@@ -1,5 +1,5 @@
 {
-  "name": "example",
+  "name": "playground",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "react-app-polyfill": "^1.0.0",
-    "mylib": "file:../dist"
+    "tementai": "file:../dist"
   },
   "devDependencies": {
     "@types/react": "^16.9.11",

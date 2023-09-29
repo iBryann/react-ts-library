@@ -1,11 +1,14 @@
 module.exports = {
   stories: [
-    '../src/**.*.mdx',
+    './docs/**/*.mdx',
     '../src/**/*.stories.@(ts|tsx)'
   ],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials'
+  ],
   typescript: {
-    check: true, // type-check stories during Storybook build
+    check: true,
   },
   framework: {
     name: "@storybook/react-webpack5",
